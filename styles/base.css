@@ -1,7 +1,8 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: Baskerville, Georgia, serif;
+  background-color: #F4F4F4;
 }
 
 * {
@@ -56,4 +57,16 @@ button {
 
 button[type=submit] {
   background-color: lightgrey; color: black;
+}
+
+
+.header {
+  background-color: black; color: white;
+  height: 68px;
+}
+
+.header .site-name {
+  font-size: 24px;
+  text-align: center;
+  line-height: 68px;
 }

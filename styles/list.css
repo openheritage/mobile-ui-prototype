@@ -1,35 +1,59 @@
-.plaques-nearby {
+.plaques {
   list-style-type: none;
-  display: table;
-  border-collapse: collapse;
   width: 100%;
   padding: 0;
-  border-width: 0 0 1px 0;
-  border-color: black;
+  margin: 0;
+}
+
+.plaques li {
+  padding: 0;
+  margin: 0;
+}
+
+.plaques li:before,
+.plaques li:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.plaques li:after {
+    clear: both;
+}
+
+.plaques li:after {
+  display: block;
+  content: ' ';
+  margin-left: 25px; margin-right: 25px;
+  border-bottom: 1px solid grey;
+}
+
+.plaques li .icon {
+  float: left;
+  width: 33px; height: 33px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-width: 3px;
+  border-color: white;
   border-style: solid;
-}
-
-.plaques-nearby li {
-  border-width: 1px 0 0 0;
-  border-color: black;
-  border-style: solid;
-  display: table-row;
-}
-
-.plaques-nearby .distance {
-  display: table-cell;
-  vertical-align: middle;
-  padding: 0 .5em;
-}
-
-.plaques-nearby .title {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.plaques-nearby .image {
-  display: table-cell;
+  border-radius: 16.5px;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
   background-color: lightgrey;
-  height: 50px;
-  width: 60px;
+}
+
+.plaques li .icon.blue {
+  background-color: #3D4982;
+}
+
+.plaques li .content {
+  margin-left: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.plaques .distance {
+}
+
+.plaques .address {
+  font-size: 18px;
 }
