@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="styles/base.css">
-  <link rel="stylesheet" type="text/css" href="styles/add-details.css">
+  <link rel="stylesheet" type="text/css" href="styles/take-photo.css">
   <title>Open Plaques</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-  <div class="add-plaque-header">
+
+  <div class="header">
+    <div class="site-name">Open Plaques</div>
+  </div>
+
+  <div class="message">
+    <span class="intro">Well spotted! <br>
+    Can you please take a photo of it?</span>
+    We’ll see if Open Plaques already knows about it, or not.
   </div>
 
   <form>
 
-    <input type="file" accept="image/*" capture>
+    <input type="file" accept="image/*" capture class="take-photo hidden" id="photo-input">
+    <button class="take-photo" id="photo-button">
 
   </form>
+
+  <script>
+
+    function handleFiles() {
+
+    }
+
+    function addTakePhotoEvent() {
+
+      var file_input = document.getElementById('photo-input')
+      var photo_button = document.getElementById('photo-button')
+
+      file_input.addEventListener("change", handleFiles, false)
+
+      photo_button.addEventListener('click', function() {
+        file_input.click();
+      })
+
+    }
+
+    document.addEventListener('DOMContentLoaded', addTakePhotoEvent)
+
+
+  </script>
 
 </body>
 </html>
