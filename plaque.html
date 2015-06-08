@@ -10,6 +10,12 @@
 </head>
 <body>
 
+  <div class="header">
+    <div class="site-name">Open Plaques</div>
+  </div>
+  <div id="small-map"></div>
+
+
   <div class="images">
     <div class="image">
       <img>
@@ -24,7 +30,6 @@
 
   <div class="description">This plaque was erected after a local campaign resulting in a petition of over 1500 signatures.  </div>
 
-  <div id="small-map"></div>
 
   <script>
 
@@ -35,6 +40,8 @@
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
+
+    map.doubleClickZoom.disable();
 
   </script>
 
