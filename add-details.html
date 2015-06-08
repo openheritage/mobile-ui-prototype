@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/base.css">
+  <link rel="stylesheet" type="text/css" href="styles/add-details.css">
+  <title>Open Plaques</title>
+</head>
+<body>
+
+  <div class="add-plaque-header">
+    <div class="back">&lt; Back</div>
+  </div>
+
+  <form>
+
+    <div class="simple-field">
+      <label for="subject">Who (or what) is the plaque about?</label>
+      <input id="subject" name="subject">
+    </div>
+
+    <div class="simple-field">
+      <label for="organisation">Which organisation is mentioned on the plaque (if any)?</label>
+      <input id="organisation" name="organisation">
+    </div>
+
+    <fieldset class="select-field">
+      <legend>What colour is the plaque?</legend>
+
+      <div class="options">
+
+        <div class="option">
+          <input type="radio" name="colour" value="blue" id="colour-blue">
+          <label for="colour-blue">Blue</label>
+        </div>
+
+        <div class="option">
+          <input type="radio" name="colour" value="red" id="colour-black">
+          <label for="colour-black">Black</label>
+        </div>
+
+        <div class="option">
+          <input type="radio" name="colour" value="brass" id="colour-brass">
+          <label for="colour-brass">Brass</label>
+        </div>
+
+        <div class="option">
+          <input type="radio" name="colour" value="red" id="colour-red">
+          <label for="colour-red">Red</label>
+        </div>
+
+        <div class="option">
+          <input type="radio" name="colour" value="green" id="colour-green">
+          <label for="colour-green">Green</label>
+        </div>
+      </div>
+
+      <div class="option-other">
+        <input type="radio" name="colour" value="other" id="colour-other">
+        <label for="colour-other">Other</label>
+        <input type="text" name="colour-other" value="" id="">
+      </div>
+
+
+    </fieldset>
+
+
+    <button type="submit">Save</button>
+
+  </form>
+
+</body>
+</html>

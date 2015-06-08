@@ -4,3 +4,56 @@ body {
   font-family: sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+.simple-field {
+  padding: .5em 1em;
+}
+
+.simple-field label {
+  display: block;
+}
+
+.simple-field input {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  padding: 5px 10px;
+  border: 2px solid black;
+}
+
+.simple-field input:focus {
+  border-color: blue;
+}
+
+.select-field {
+  padding: .5em 1em;
+}
+
+
+button {
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  font-size: 1em;
+}
+
+button[type=submit] {
+  background-color: lightgrey; color: black;
+}

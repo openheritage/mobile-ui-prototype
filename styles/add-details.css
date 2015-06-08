@@ -1,0 +1,41 @@
+
+.add-plaque-header {
+  background-color: lightgrey;
+  padding: .4em 1em;
+}
+
+.add-plaque-header .image {
+  margin-left: auto; margin-right: auto;
+  background-color: darkgrey;
+  width: 130px; height: 100px;
+}
+
+
+.options {
+  display: table;
+  margin-bottom: 1em;
+}
+
+.options .option {
+  display: table-cell;
+  padding: 0 .5em 0 0;
+}
+
+.option input {
+  display: none;
+}
+
+.option label {
+  display: block;
+  padding: .2em .4em;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.option input:checked + label {
+  background-color: black; color: white;
+}
+
+.option-other {
+
+}
