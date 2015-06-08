@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  <link rel="stylesheet" type="text/css" href="styles/base.css">
+  <link rel="stylesheet" type="text/css" href="styles/leaflet.css">
+  <link rel="stylesheet" type="text/css" href="styles/plaque.css">
+  <link rel="stylesheet" type="text/css" href="styles/map.css">
+  <script src="javascript/leaflet.js"></script>
+
+  <title>Open Plaques</title>
+</head>
+<body>
+
+  <div class="images">
+    <div class="image">
+      <img>
+      <div class="credit">by <a href="#">Jez Nicholson</a></div>
+    </div>
+  </div>
+
+  <div class="number">#1435</div>
+  <div class="address">66 Mount Ephraim, Tunbridge Wells, England, UK</div>
+
+  <div class="inscription">John Mayo 1761-1818 eminent physician lived and practised here 1813-1818</div>
+
+  <div class="description">This plaque was erected after a local campaign resulting in a petition of over 1500 signatures.  </div>
+
+  <div id="small-map"></div>
+
+  <script>
+
+    // create a map in the "map" div, set the view to a given place and zoom
+    var map = L.map('small-map').setView([51.505, -0.09], 13);
+
+    // add an OpenStreetMap tile layer
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+  </script>
+
+  <div>Erected by <a href="#" class="organisation">Royal Tunbridge Wells</a> in <a href="#">1983</a></div>
+
+
+</body>
+</html>
